@@ -1,12 +1,12 @@
-let addToy = false;
+let toy = false;
 
  document.addEventListener("DOMContentLoaded", () => {
-   const addBtn = document.querySelector("#new-toy-btn");
+   const button = document.querySelector("#new-toy-btn");
    const toyFormContainer = document.querySelector(".container");
-   addBtn.addEventListener("click", () => {
+   button.addEventListener("click", () => {
      // hide & seek with the form
-     addToy = !addToy;
-     if (addToy) {
+     toy  = !toy ;
+     if (toy ) {
        toyFormContainer.style.display = "block";
      } else {
        toyFormContainer.style.display = "none";
